@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 const Header = () => {
   return (
     <header className="bg-black">
@@ -64,23 +64,21 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
+              <div
                 className="block rounded-md  px-5 py-2.5 text-sm font-medium 
               text-white transition"
-                href="#"
               >
-                Login
-              </a>
+                <LoginLink postLoginRedirectURL="/dashboard"> Login</LoginLink>
+              </div>
 
-              <a
+              <div
                 className="hidden rounded-md bg-gray-100 
               px-5 py-2.5 text-sm font-medium
                text-black transition
                 hover:text-slate-800 sm:block"
-                href="#"
               >
-                Register
-              </a>
+                <RegisterLink>Register</RegisterLink>
+              </div>
             </div>
 
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">

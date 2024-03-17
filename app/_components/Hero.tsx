@@ -15,7 +15,7 @@ function Hero() {
           See What's New | <span className="text-sky-300">AI Diagram</span>
         </h2>
       </div>
-      <div className="mx-auto h-screen max-w-screen-xl px-4 py-24 lg:flex  ">
+      <div className="mx-auto h-screen max-w-screen-xl px-4 pt-24 lg:flex  ">
         <div className="mx-auto max-w-xl text-center">
           <h1 className="text-3xl text-sky-300 font-extrabold sm:text-5xl">
             Documents & diagrams
